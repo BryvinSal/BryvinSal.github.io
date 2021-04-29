@@ -443,7 +443,9 @@
                 if (data.responseText !== '') {
                     $(formMessages).text(data.responseText);
                 } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                    $(formMessages).text('Thank You! Your message has been sent.');
+					// Clear the form.
+                $('#contact-form input,#contact-form textarea').val('');
                 }
             });
         });
